@@ -1,0 +1,50 @@
+---------------------------------------------------------------
+
+Name :- Prasad Kshirsagar
+Entry No :- 2016csb1041
+Course :- CSL333
+Topic - Assignment 3
+Date :- 18/10/18
+
+---------------------------------------------------------------
+1. What does this program do
+---------------------------------------------------------------
+
+1. The purpose of this program is to detect a deadlock in the given system.
+2. This deadlock is detected using the algorithm provided in the research paper.
+3. If deadlock happens, it also illustrates the processes which are deadlocked and resources involved in the deadlocked processes.
+
+---------------------------------------------------------------
+2. How this program works (i.e. its logic)
+---------------------------------------------------------------
+
+This deadlock is detected using the algorithm provided in the research paper.
+
+Algorithm used :
+
+1. Initialize W by given available list of resources. Mark all the rows for which P[i] = 0. All rows are unmarked initially.
+2. Search for an unmarked row say i'th  such that Q[i] <= W , if one is found goto step 3. else, terminate the program.
+3. set W =  W + P[i] & mark i'th row. goto step 2.
+
+conclusion : 
+
+It is not difficult to verify that a deadlock exists if and only if there are umnarked rows at the termination of the algorithm. More- over,the set of unmarked rows corresponds precisely to the set of deadlocked tasks.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
